@@ -1,4 +1,9 @@
-El tutorial de como configurar el proyecto para usar React con Webpack y Babel
-aparece en la siguiente pagina:
-
-https://scotch.io/tutorials/setup-a-react-environment-using-webpack-and-babel
+This project uses:
+    -Electron
+    -React
+    -Sass
+    -Webpack
+    
+1º: npm i
+2º: npm run desktop (to run the app like desktop app)
+3º: npm run web (to run in the browser)
