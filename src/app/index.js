@@ -1,11 +1,12 @@
 import  React from 'react';
 import ReactDOM from 'react-dom';
+import { NavbarComponent } from './shared/components/navbar';
 
 import './main.scss';
 
 const app = (
-    <div>
-        <h1>Welcome to Zodiark</h1>
+    <div id="zodiark">
+        <NavbarComponent />
     </div>
 );
 
