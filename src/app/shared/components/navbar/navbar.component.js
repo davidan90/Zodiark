@@ -1,11 +1,11 @@
 import React from 'react';
 
-const faviconPath = '../../../assets/img/favicon.png';
+const faviconPath = './assets/img/favicon.png';
 
 export class NavbarComponent extends React.Component {
     render() {
         return (
-            <nav>
+            <nav className="navbar theme-vulcano">
                 <ul>
                     <li>
                         <a href="#">

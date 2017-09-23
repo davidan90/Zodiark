@@ -1,46 +1,8 @@
-html, body{
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-}
-
-/*TO DO MOVE TO MENU JS*/
-
-nav{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 9999;
-    display: block;
-    margin: 0;
-    width: 100%;
-    height: 40px;
-    max-height: 40px;
-    background: rgb(48, 48, 48);
-    color: #fff;
-    font-size: 15px;
-    line-height: 15px;
-    -webkit-app-region: drag; //Allows electronjs to drag the main window
-    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    ul{
-        li{
-            list-style: none;
-            display: inline-block;
-            margin-right: 12px;
-            &:first-child{
-                float: left;
-                position: relative;
-                top: -6px;
-                img{
-                    width: 27px;
-                }
-            }
-            &:nth-child(2){
-                margin-right: 30px;
-                font-size: 1.1rem;
-            }
-        }
-    }
+#zodiark{
+    @import 'assets/sass/base';
+    @import 'assets/sass/variables';
+    @import 'assets/sass/fonts';
+    @import 'assets/sass/themes';
+    @import 'shared/all';
+    // @import 'components/all';
 }
