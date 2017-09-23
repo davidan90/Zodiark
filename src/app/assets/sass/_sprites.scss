@@ -1,0 +1,25 @@
+.app-actions{
+    .window-actions{
+        .action{
+            background-image: url('../../../assets/img/action_buttons_sprite.png');
+            &.close{
+                background-position: 0% 0%;
+                &:hover{
+                    background-position: 0% 100%;
+                }
+            }
+            &.minimize{
+                background-position: 33% 0%;
+                &:hover{
+                    background-position: 33% 100%;
+                }
+            }
+            &.maximize{
+                background-position: 67% 0px;
+                &:hover{
+                    background-position: 67% 100%;
+                }
+            }
+        }
+    }
+}

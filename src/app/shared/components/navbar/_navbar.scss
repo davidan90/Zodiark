@@ -12,27 +12,55 @@ nav{
         font-size: 15px;
         line-height: 15px;
         -webkit-app-region: drag; //Allows electronjs to drag the main window
-        font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; //just for test purpose
         z-index: $firstLevel;
+        &:after{
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 0;
+            font-size:0;
+            line-height:0;
+        }
         ul{
+            display: inline-block;
             li{
                 list-style: none;
                 display: inline-block;
-                margin-right: 12px;
                 &:first-child{
                     float: left;
                     position: relative;
                     top: -6px;
+                    margin-right: 8px;
                     img{
-                        width: 27px;
+                        width: 37px;
                     }
                 }
                 &:nth-child(2){
                     margin-right: 30px;
-                    font-size: 1.1rem;
+                    font-size: 0.96rem;
+                    font-family: $fontRegular;
                 }
             }
         }
+
+        //Replace with app-actions component
+        .app-actions{
+            float: right;
+            width: 160px;
+            height: 40px;
+            line-height: 40px;
+            .window-actions{
+               text-align:left;
+               .action{
+                   height: 24px;
+                   width: 24px;
+                   cursor: pointer;
+                   display: inline-block;
+                   margin: 8px 8px 8px 0px;
+               }
+            }
+        }
+        //Replace with app-actions component
         
         //SCSS FOR COMPONENT THEMES
         
