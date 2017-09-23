@@ -1,31 +1,12 @@
 #zodiark{
     @import 'assets/sass/base';
     @import 'assets/sass/variables';
-    @import 'assets/sass/fonts';
     @import 'assets/sass/sprites';
     @import 'assets/sass/themes';
     @import 'shared/all';
     // @import 'components/all';
 }
 
-//Move to _fonts.scss
 
-@font-face{
-    font-family: 'ZodiarkLight';
-    src: url('assets/fonts/ZodiarkLight.otf');
-}
-
-@font-face{
-    font-family: 'ZodiarkRegular';
-    src: url('assets/fonts/ZodiarkRegular.otf');
-}
-
-@font-face{
-    font-family: 'ZodiarkSem';
-    src: url('assets/fonts/ZodiarkSem.ttf');
-}
-
-@font-face{
-    font-family: 'ZodiarkBold';
-    src: url('assets/fonts/ZodiarkBold.otf');
-}
+//Fonts
+@import 'assets/sass/fonts';
