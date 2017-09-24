@@ -1,16 +1,25 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 
 export class AppActionsComponent extends React.Component {
     render() {
+        const {onClose} = this.props;
+        const {onMinimize} = this.props;
+        const {onMaximize} = this.props;
         return (
             <div className="app-actions">
                 <div className="window-actions">
-                    <div className="action close"></div>
-                    <div className="action minimize"></div>
-                    <div className="action maximize"></div>
+                    <div className="action close" onClick={ onClose }></div>
+                    <div className="action minimize" onClick={ onMinimize }></div>
+                    <div className="action maximize" onClick={ onMaximize }></div>
                 </div>
             </div>
         );
     }
+}
+
+AppActionsComponent.PropTypes = {
+    onClose: PropTypes.func.isRequired,
+    onMinimize: PropTypes.func.isRequired,
+    onMaximize: PropTypes.func.isRequired
 }
