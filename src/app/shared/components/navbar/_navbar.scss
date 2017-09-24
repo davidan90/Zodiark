@@ -1,3 +1,5 @@
+@import 'components/app-actions';
+
 nav{
     &.navbar{
         position: absolute;
@@ -13,14 +15,6 @@ nav{
         line-height: 15px;
         -webkit-app-region: drag; //Allows electronjs to drag the main window
         z-index: $firstLevel;
-        &:after{
-            content: '';
-            display: inline-block;
-            width: 100%;
-            height: 0;
-            font-size:0;
-            line-height:0;
-        }
         ul{
             display: inline-block;
             li{
@@ -42,25 +36,6 @@ nav{
                 }
             }
         }
-
-        //Replace with app-actions component
-        .app-actions{
-            float: right;
-            width: 160px;
-            height: 40px;
-            line-height: 40px;
-            .window-actions{
-               text-align:left;
-               .action{
-                   height: 24px;
-                   width: 24px;
-                   cursor: pointer;
-                   display: inline-block;
-                   margin: 8px 8px 8px 0px;
-               }
-            }
-        }
-        //Replace with app-actions component
         
         //SCSS FOR COMPONENT THEMES
         

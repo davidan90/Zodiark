@@ -1,4 +1,5 @@
 import React from 'react';
+import { AppActionsComponent } from './components';
 
 const faviconPath = './assets/img/logo.png';
 
@@ -14,15 +15,7 @@ export class NavbarComponent extends React.Component {
                     </li>
                     <li>Zodiark</li>
                 </ul>
-                {/*Replace with app-actions component*/}
-                <div className="app-actions">
-                    <div className="window-actions">
-                        <div className="action close"></div>
-                        <div className="action minimize"></div>
-                        <div className="action maximize"></div>
-                    </div>
-                </div>
-                {/*Replace with app-actions component*/}
+                <AppActionsComponent />
             </nav>
         );
     }

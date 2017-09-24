@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { NavbarComponent } from './shared/components/navbar';
+import { NavbarComponent } from './shared';
 
 import './main.scss';
 

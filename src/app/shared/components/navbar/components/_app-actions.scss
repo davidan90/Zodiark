@@ -1,0 +1,16 @@
+.app-actions{
+    float: right;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    .window-actions{
+        text-align:left;
+        .action{
+            height: 24px;
+            width: 24px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 8px 8px 8px 0px;
+        }
+    }
+}
