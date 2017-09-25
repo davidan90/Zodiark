@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 
 export class AppActionsComponent extends React.Component {
     render() {
-        const {onClose} = this.props;
-        const {onMinimize} = this.props;
-        const {onMaximize} = this.props;
+        const {onClose, onMinimize, onMaximize} = this.props;
+
         return (
             <div className="app-actions">
                 <div className="window-actions">
