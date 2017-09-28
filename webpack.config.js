@@ -12,6 +12,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 const baseConfig = {
   entry: './src/app',
+
   module: {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
@@ -19,6 +20,7 @@ const baseConfig = {
       { test: /\.scss$/, loader: 'style-loader!css-loader?url=false!sass-loader?sourceMap' }
     ]
   },
+
   plugins: [HtmlWebpackPluginConfig]
 }
 

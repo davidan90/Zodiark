@@ -1,1 +1,1 @@
-export * from './app-actions.component';
+export * from './app-actions/app-actions.component';
