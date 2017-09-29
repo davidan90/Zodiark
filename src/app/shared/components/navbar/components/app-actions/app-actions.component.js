@@ -2,6 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export class AppActionsComponent extends React.Component {
+    static propTypes = {
+        onClose: PropTypes.func.isRequired,
+        onMinimize: PropTypes.func.isRequired,
+        onMaximize: PropTypes.func.isRequired
+    }
+
     render() {
         const {onClose, onMinimize, onMaximize} = this.props;
 
@@ -15,10 +21,4 @@ export class AppActionsComponent extends React.Component {
             </div>
         );
     }
-}
-
-AppActionsComponent.PropTypes = {
-    onClose: PropTypes.func.isRequired,
-    onMinimize: PropTypes.func.isRequired,
-    onMaximize: PropTypes.func.isRequired
 }
